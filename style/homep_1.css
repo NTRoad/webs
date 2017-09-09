@@ -1,0 +1,558 @@
+/* 重置样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "punctuation", "PingFangSc-Regular", "Microsoft YaHei", "微软雅黑";
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 布局样式 */
+
+
+/* background部分 */
+
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("../images/ic.jpg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+
+/* header部分 */
+
+#outline {
+    height: auto;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    margin: 50px auto;
+    width: 85%;
+}
+
+#header {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    width: 100%;
+    background: #343434;
+    color: #fff;
+}
+
+.head_content {
+    width: 100%;
+    height: 45px;
+}
+
+.headUl {}
+
+.headUl li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.headUl li a {
+    color: #fff;
+}
+
+.headUl .active a {
+    color: blueviolet;
+}
+
+.headUl li:hover a {
+    color: blueviolet;
+}
+
+.headUl li i {
+    display: inline-block;
+    width: 1px;
+    background: #999;
+    height: 18px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+
+.head_content label {
+    font-size: 14px;
+}
+
+.head_content select {
+    background: #f9f9f9;
+    margin-right: 20px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.lef_menu {
+    background: url("../images/homeP_img/menu2.png") no-repeat;
+    background-size: 24px 24px;
+    padding: 0 24px;
+    line-height: 26px;
+    height: 24px;
+    position: relative;
+    top: 12px;
+    left: 20px;
+    color: #ccc;
+    display: none;
+    cursor: pointer;
+}
+
+.rig_menu {
+    background: url("../images/homeP_img/menu1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    position: relative;
+    right: 20px;
+    top: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+.rig_menu {
+    display: block;
+}
+
+.head_content .tes {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #343434;
+}
+
+.head_content .tes span {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+/* welcome部分 */
+
+#welcome {
+    height: 100px;
+    padding: 15px 0;
+}
+
+#welcome p {
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+#welcome p strong {
+    font-size: 20px;
+}
+
+
+/* 大图轮播部分 */
+
+#bigBanner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bigBannerUl {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.bigBannerUl li {
+    height: 100%;
+    float: left;
+}
+
+.bigBannerUl li img {
+    width: 100%;
+    height: 100%;
+}
+
+.bigBannerSpan {
+    height: 10px;
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+}
+
+.bigBannerSpan span {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.banTo {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+}
+
+.toF {
+    background: url("../images/homeP_img/banToL.png") no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.toR {
+    background: url("../images/homeP_img/banToR.png") no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.showBan {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 80px;
+}
+
+
+/* about部分 */
+
+#about {
+    width: 100%;
+}
+
+.about_head {
+    height: 50px;
+}
+
+.about_head p {
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_me {
+    margin: 40px auto;
+    width: 80%;
+}
+
+.pic_select {
+    width: 50%;
+}
+
+.tex_select {
+    width: 43%;
+}
+
+.tex_select h1 {
+    font-size: 26px;
+}
+
+.tex_select p {
+    margin-top: 15px;
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.pic_select img {
+    width: 100%;
+}
+
+
+/* photos部分 */
+
+#photos {
+    width: 100%;
+    height: auto;
+    background: #343434;
+}
+
+.photo_head {
+    height: 80px;
+}
+
+.photo_head p {
+    font-size: 30px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.photo_con {
+    height: auto;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.photo_tab {
+    width: 100%;
+    position: relative;
+}
+
+.photo_tab ul {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tabPic li {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.tabPic li img {
+    width: 100%;
+}
+
+.tabPic li:hover {
+    opacity: 0.7;
+}
+
+.big_photo {
+    position: absolute;
+    left: 20%;
+    top: 10px;
+    z-index: 10;
+    width: 60%;
+}
+
+.big_photo ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+
+.shade {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.7;
+    display: none;
+}
+
+.big_photo ul li img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* foott部分 */
+
+#footer {
+    padding: 20px;
+}
+
+#footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+
+
+/* 媒体查询适合pad屏 */
+
+@media(max-width:1050px) {
+    /* header部分 */
+    .rig_menu {
+        display: block;
+    }
+    .head_content .tes {
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background: #343434;
+    }
+    .head_content .tes span {
+        display: block;
+        padding: 10px 20px;
+    }
+    /* about部分 */
+    .tex_select h1 {
+        font-size: 22px;
+    }
+    .tex_select p {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    /* photos部分 */
+    .photo_tab ul {
+        width: 90%;
+    }
+    .tabPic li {
+        padding: 10px;
+    }
+    .big_photo {
+        left: 15%;
+        width: 70%;
+    }
+}
+
+
+/* 媒体查询适合手机屏 */
+
+@media(max-width:750px) {
+    /* header部分 */
+    #outline {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .headUl {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 45px;
+        background: #343434;
+    }
+    .headUl li {
+        width: 100%;
+    }
+    .headUl li i {
+        display: none;
+    }
+    .rig_menu {
+        display: block;
+    }
+    .lef_menu {
+        display: block;
+    }
+    /* 大图轮播部分 */
+    .bigBannerSpan {
+        height: 8px;
+        bottom: 10px;
+    }
+    .bigBannerSpan span {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+    .banTo {
+        display: none;
+    }
+    .showBan {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.8;
+        font-size: 12px;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    /* about部分 */
+    .pic_select {
+        width: 90%;
+        margin: 0 10px;
+    }
+    .tex_select {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0 10px;
+    }
+    .tex_select p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .pic_select img {
+        width: 100%;
+    }
+    /* photos部分 */
+    .photo_tab ul {
+        width: 90%;
+    }
+    .tabPic li {
+        width: 50%;
+        padding: 8px;
+    }
+    .tabPic li img {
+        width: 100%;
+    }
+    .big_photo {
+        left: 0;
+        width: 100%;
+    }
+    /* foott部分 */
+    #footer {
+        padding: 20px;
+    }
+    #footer p {
+        margin-top: 10px;
+        font-size: 12px;
+        text-indent: 2em;
+        line-height: 20px;
+    }
+}
