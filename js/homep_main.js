@@ -143,7 +143,6 @@ function initBigBannerMove() {
     });
 
     $(".toR").click(function(event) {
-        clearInterval(timer);
         $(".bigBannerUl").stop();
         $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 0.6);
         $(".bigBannerUl").animate({ "left": -1 * (++iNow) * $(".bigBannerUl>li").width() + "px" }, 500);
@@ -152,18 +151,8 @@ function initBigBannerMove() {
             $(".bigBannerUl").animate({ "left": 0 + "px" }, 0);
         }
         $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 1);
-        timer = setInterval(function() {
-            $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 0.6);
-            $(".bigBannerUl").animate({ "left": -1 * (++iNow) * $(".bigBannerUl>li").width() + "px" }, 500);
-            if (iNow == $(".bigBannerUl>li").length / 2) {
-                iNow = 0;
-                $(".bigBannerUl").animate({ "left": 0 + "px" }, 0);
-            }
-            $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 1);
-        }, 5000);
     });
     $(".toF").click(function(event) {
-        clearInterval(timer);
         $(".bigBannerUl").stop();
         $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 0.6);
         if (iNow == 0) {
@@ -176,15 +165,6 @@ function initBigBannerMove() {
             "left": -1 * $(".bigBannerUl>li").width() * (--iNow) + "px"
         }, 800);
         $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 1);
-        timer = setInterval(function() {
-            $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 0.6);
-            $(".bigBannerUl").animate({ "left": -1 * (++iNow) * $(".bigBannerUl>li").width() + "px" }, 500);
-            if (iNow == $(".bigBannerUl>li").length / 2) {
-                iNow = 0;
-                $(".bigBannerUl").animate({ "left": 0 + "px" }, 0);
-            }
-            $(".bigBannerSpan>span:eq(" + iNow + ")").fadeTo(500, 1);
-        }, 5000);
     });
     $(".bigBannerSpan>span").bind("mouseover", function() {
         clearInterval(timer);
