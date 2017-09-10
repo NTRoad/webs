@@ -1,0 +1,235 @@
+/* 重置样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "punctuation", "PingFangSc-Regular", "Microsoft YaHei", "微软雅黑";
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* 布局样式 */
+
+
+/* background部分 */
+
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("../images/ic.jpg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+
+/* header部分 */
+
+#outline {
+    height: auto;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    margin: 50px auto;
+    width: 85%;
+}
+
+#header {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    width: 100%;
+    background: #343434;
+    color: #fff;
+}
+
+.head_content {
+    width: 100%;
+    height: 45px;
+}
+
+.headUl {}
+
+.headUl li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.headUl li a {
+    color: #fff;
+}
+
+.headUl .active a {
+    color: blueviolet;
+}
+
+.headUl li:hover a {
+    color: blueviolet;
+}
+
+.headUl li i {
+    display: inline-block;
+    width: 1px;
+    background: #999;
+    height: 18px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+
+.head_content label {
+    font-size: 14px;
+}
+
+.head_content select {
+    background: #f9f9f9;
+    margin-right: 20px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.lef_menu {
+    background: url("../images/homeP_img/menu2.png") no-repeat;
+    background-size: 24px 24px;
+    padding: 0 24px;
+    line-height: 26px;
+    height: 24px;
+    position: relative;
+    top: 12px;
+    left: 20px;
+    color: #ccc;
+    display: none;
+    cursor: pointer;
+}
+
+.rig_menu {
+    background: url("../images/homeP_img/menu1.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    position: relative;
+    right: 20px;
+    top: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+.rig_menu {
+    display: block;
+}
+
+.head_content .tes {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #343434;
+}
+
+.head_content .tes span {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+/* no */
+
+#noText {
+    height: 2000px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/* 媒体查询适合pad屏 */
+
+@media(max-width:1050px) {
+    /* header部分 */
+    .rig_menu {
+        display: block;
+    }
+    .head_content .tes {
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background: #343434;
+    }
+    .head_content .tes span {
+        display: block;
+        padding: 10px 20px;
+    }
+}
+
+
+/* 媒体查询适合手机屏 */
+
+@media(max-width:750px) {
+    /* header部分 */
+    #outline {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .headUl {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 45px;
+        background: #343434;
+    }
+    .headUl li {
+        width: 100%;
+    }
+    .headUl li i {
+        display: none;
+    }
+    .rig_menu {
+        display: block;
+    }
+    .lef_menu {
+        display: block;
+    }
+}
