@@ -30,9 +30,6 @@ function initMove() {
 }
 //初始化header部分事件
 function initHeaderMove() {
-    $(".rig_menu").click(function() {
-        $(".tes").slideToggle(400);
-    });
     $(".lef_menu").click(function() {
         $(".headUl").slideToggle(400);
     });
