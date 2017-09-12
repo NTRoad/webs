@@ -73,7 +73,7 @@ a {
     position: relative;
     height: 45px;
     line-height: 45px;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     background: #343434;
     color: #fff;
@@ -84,7 +84,9 @@ a {
     height: 45px;
 }
 
-.headUl {}
+.headUl {
+    z-index: 5000;
+}
 
 .headUl li {
     float: left;
@@ -315,7 +317,10 @@ a {
 }
 
 .pages {
-    z-index: 100;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    z-index: 10;
     width: 100%;
     position: relative;
     background: #343434;
